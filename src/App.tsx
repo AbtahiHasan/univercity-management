@@ -1,12 +1,13 @@
-import { Provider } from "react-redux";
-import { store } from "./redux/store";
 import RootLayout from "./layout/RootLayout";
+import ProtectedRoute from "./private/ProtectedRoute";
 
 function App() {
   return (
-    <Provider store={store}>
-      <RootLayout />
-    </Provider>
+    <>
+      <ProtectedRoute>
+        <RootLayout />;
+      </ProtectedRoute>
+    </>
   );
 }
 
