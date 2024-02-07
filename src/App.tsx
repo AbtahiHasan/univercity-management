@@ -1,3 +1,4 @@
+import { Toaster } from "sonner";
 import RootLayout from "./layout/RootLayout";
 import ProtectedRoute from "./private/ProtectedRoute";
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <ProtectedRoute>
         <RootLayout />;
+        <Toaster />
       </ProtectedRoute>
     </>
   );
