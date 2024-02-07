@@ -42,7 +42,9 @@ const PHForm: FC<IFormConfig & IFromProps> = ({
 
   return (
     <FormProvider {...methods}>
-      <Form onFinish={methods.handleSubmit(submit)}>{children}</Form>
+      <Form layout="vertical" onFinish={methods.handleSubmit(submit)}>
+        {children}
+      </Form>
     </FormProvider>
   );
 };

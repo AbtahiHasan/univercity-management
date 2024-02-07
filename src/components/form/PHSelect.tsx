@@ -22,9 +22,7 @@ const PHSelect: FC<ISelectProps> = ({ label, name, options, disabled }) => {
             size="large"
             disabled={disabled}
           />
-          {error && (
-            <p style={{ color: "red", marginTop: "10px" }}>{error.message}</p>
-          )}
+          {error && <p style={{ color: "red" }}>{error.message}</p>}
         </Form.Item>
       )}
     />
